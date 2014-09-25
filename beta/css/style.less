@@ -10,58 +10,46 @@
 }
 
 body {
-    background-color: @light-gray-color;
-}
-
-.topNavbar a {
-    color: white;
-    text-decoration: none;
-    font-size: 13pt;
-
-    &:hover {
-        color: white;
-    }
-}
-
-.topNavbar {
-    position: fixed;
-    top: 0 !important;
-    right: 0 !important;
-    left: 0 !important;
-    height: 10px;
-    width: 100%;
     background-color: black;
-    color: white;
-    z-index: 999;
-    box-shadow: 0px 4px rgba(0,0,0,0.2);
-    padding: 15px 25px 15px 25px;
 }
 
-.middleButton {
-    z-index: 1111;
+.logoBubble {
     position: fixed;
-    left: 50%;
-    margin-left: -78px;
-    margin-top: -50px;
-    width: 150px;
-    height: 150px;
+    top: 20px;
+    left: 20px;
+    background-color: white;
+    padding: 5px;
+    z-index:9999;
+    height: 110px;
+    width: 110px;
     border-radius: 50%;
-    background-color: black;
-    border-color: white;
-    border-style: solid;
-    border-width: 3px;
+    text-align: center;
+}
 
-    transition: transform 0.2s ease-in-out;
-    -webkit-transition: -webkit-transform 0.2s ease-in-out;
-    -moz-transition: -moz-transform 0.2s ease-in-out;
-    -ms-transition: -ms-transform 0.2s ease-in-out;
-    -o-transition: -o-transform 0.2s ease-in-out;
+ul#navigation {
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    top: 140px;
+    left: 0px;
+    list-style: none;
+    z-index:9999;
+    text-align: center;
 
-    &:hover {
-        transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        -o-transform: scale(1.2);
+    & li {
+        width: 100px;
+    }
+
+    & li a {
+        display: block;
+        margin-left: 20px;
+        width: 80px;
+        height: 80px;    
+        background-color: white;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 50%;    
+        opacity: 1.0;
+        margin-top: 5px;
     }
 }

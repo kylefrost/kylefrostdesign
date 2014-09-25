@@ -3,13 +3,33 @@
     <head>
         <title>Kyle Frost Design</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/jquery.js"></script>
     </head>
     <body>
-        <div class="middleButton">
-        </div>
-        <div class="topNavbar">
-        </div>
+        <div class="logoBubble">LOGO</div>
+        <ul id="navigation">
+            <li class="home"><a href="" title="Home">Home</a></li>
+            <li class="about"><a href="" title="About">Movie<br>Memory</a></li>
+            <li class="search"><a href="" title="Search">Contact</a></li>
+            <li class="photos"><a href="" title="Photos">Personal</a></li>
+        </ul>
+        
         <div class="mainContent">
         </div>
+
+        <script type="text/javascript">
+            $(function() {
+                $('#navigation a').stop().animate({'marginLeft':'-75px'},500);
+
+                $('#navigation > li').hover(
+                    function () {
+                        $('a',$(this)).stop().animate({'marginLeft':'20px'},200);
+                    },
+                    function () {
+                        $('a',$(this)).stop().animate({'marginLeft':'-75px'},200);
+                    }
+                );
+            });
+        </script>
     </body>
 </html>
