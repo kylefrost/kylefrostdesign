@@ -1,4 +1,4 @@
-kylefrostdesign
+Kyle Frost Design Website
 ===============
 
-KyleFrostDesign.com
+[KyleFrostDesign.com](http://www.kylefrostdesign.com)
