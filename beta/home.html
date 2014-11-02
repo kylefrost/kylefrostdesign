@@ -3,22 +3,34 @@
     <head>
         <title>Movie Memory</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/animations.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
         <script src="js/jquery.js"></script>
     </head>
     <body>
-        <div class="topNavbar"><img src="img/kfd_logo.png" height="30px">
+        <div class="topNavbar"><a href="http://www.kylefrostdesign.com"><img src="img/kfd_logo.png" height="30px" class="fadeIn"></a>
             <div id="topNavbarButtonContainer">
-                <div class="topNavbarButton"><a href="#contact">CONTACT</a></div>
-                <div class="topNavbarButton"><a href="#projects">PROJECTS</a></div>
-                <div class="topNavbarButton"><a href="#about">ABOUT</a></div>
-                <div class="topNavbarButton"><a href="#home">HOME</a></div>
+                <div class="topNavbarButton fadeIn"><a href="#contact">CONTACT</a></div>
+                <div class="topNavbarButton fadeIn"><a href="#projects">PROJECTS</a></div>
+                <div class="topNavbarButton fadeIn"><a href="#about">ABOUT</a></div>
+                <div class="topNavbarButton fadeIn"><a href="#home">HOME</a></div>
             </div>
         </div>
 
         <div class="mainContent">
-            <div class="landingImage"><div class="landingInfo">Movie Memory</div></div>
+            <div class="landingImage">
+                <div class="landingInfo fadeIn">Movie Memory
+                    <p>The most beautiful way to</p>
+                    <p>track movies you watch.</p>
+                </div>
+            </div>
         </div>
-
     </body>
+    <script>
+        $(window).ready(function() {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                window.alert("Warning, this website is not yet optimized for mobile.");
+            }
+        });
+    </script>
 </html>
