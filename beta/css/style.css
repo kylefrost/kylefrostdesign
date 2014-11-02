@@ -4,42 +4,76 @@
   margin: auto;
 }
 body {
-  background-color: black;
+  background-color: #f4f4f4;
 }
-.logoBubble {
+.topNavbar {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+  height: 25px;
+  width: 100%;
   background-color: white;
-  padding: 5px;
-  z-index: 9999;
-  height: 110px;
-  width: 110px;
-  border-radius: 50%;
-  text-align: center;
+  color: white;
+  z-index: 999;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+  padding: 25px 25px 25px 25px;
 }
-ul#navigation {
-  position: fixed;
-  margin: 0px;
-  padding: 0px;
-  top: 140px;
-  left: 0px;
-  list-style: none;
-  z-index: 9999;
-  text-align: center;
+#topNavbarButtonContainer {
+  position: absolute;
+  right: 50px;
+  top: 26px;
 }
-ul#navigation li {
+.topNavbarButton {
+  position: relative;
+  color: #f4f4f4;
+  float: right;
+  text-align: center;
+  font-size: 13pt;
+  margin-right: 20px;
   width: 100px;
+  border-radius: 3px;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
 }
-ul#navigation li a {
+.topNavbarButton a {
+  color: grey;
+  font-size: 12pt;
+  text-decoration: none;
+  transition: color 0.3s linear;
+  -webkit-transition: color 0.3s linear;
+  -moz-transition: color 0.3s linear;
+  -ms-transition: color 0.3s linear;
+  -o-transition: color 0.3s linear;
+}
+.topNavbarButton:hover a {
+  color: #eb3231;
+}
+.mainContent {
+  position: absolute;
+  padding-top: 75px;
+  background-color: #f4f4f4;
+  height: 100%;
+  width: 100%;
+}
+.landingImage {
+  background: url("../img/hero.png") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
   display: block;
-  margin-left: 20px;
-  width: 80px;
-  height: 80px;
-  background-color: white;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 50%;
-  opacity: 1.0;
-  margin-top: 5px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.landingInfo {
+  position: relative;
+  top: 20%;
+  right: 20%;
+  color: white;
+  text-shadow: 0px 2px black;
+  font-family: 'Lato', sans-serif;
+  float: right;
+  font-size: 75pt;
+  font-weight: 100;
 }
