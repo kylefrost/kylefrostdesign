@@ -60,7 +60,7 @@ body {
   width: 100%;
 }
 .landingImage {
-  background: url("../img/hero.png") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+  background: url("../img/hero.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
   display: block;
   height: 100%;
   width: 100%;
