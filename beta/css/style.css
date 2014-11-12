@@ -2,7 +2,6 @@
   font-family: 'Lato', sans-serif;
   font-size: 15pt;
   margin: auto;
-  overflow: scroll;
 }
 body {
   background-color: rgba(0, 0, 0, 0);
@@ -58,6 +57,7 @@ body {
   padding-top: 75px;
   height: 100%;
   width: 100%;
+  overflow: scroll;
 }
 .landingImage {
   background: url("../img/hero.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
