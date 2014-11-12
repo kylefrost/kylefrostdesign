@@ -7,7 +7,7 @@
     font-family: 'Lato', sans-serif;
     font-size: 15pt;
     margin: auto;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 body {
@@ -70,7 +70,6 @@ body {
 .mainContent {
     position: absolute;
     padding-top: 75px;
-    background-color: @light-gray-color;
     height: 100%;
     width: 100%;
 }
@@ -80,17 +79,24 @@ body {
     display: block;
     height: 100%;
     width: 100%;
-    position: relative;
+    position: fixed;
 }
 
 .mainInfo {
     position: relative;
     top: 40%;
+    height: 100%;
+    width: 100%;
     color: white;
     font-family: 'Lato', sans-serif;
     font-size: 75pt;
     font-weight: 100;
     text-align: center;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; 
 
     & p {
         font-size: 30pt;
@@ -103,3 +109,14 @@ body {
     }
 }
 
+.secondInfo {
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
