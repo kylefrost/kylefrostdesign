@@ -4,7 +4,7 @@
   margin: auto;
 }
 body {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: white;
 }
 .topNavbar {
   position: fixed;
@@ -59,20 +59,19 @@ body {
   width: 100%;
 }
 .landingImage {
-  background: url("../img/hero.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
   display: block;
   height: 100%;
   width: 100%;
   position: fixed;
 }
 .mainInfo {
-  position: relative;
+  position: fixed;
   top: 40%;
   height: 100%;
   width: 100%;
-  color: white;
+  color: black;
   font-family: 'Lato', sans-serif;
-  font-size: 75pt;
+  font-size: 10em;
   font-weight: 100;
   text-align: center;
   user-select: none;
@@ -85,7 +84,7 @@ body {
   font-weight: 300;
 }
 .mainInfo b {
-  font-size: 75pt;
+  font-size: 1em;
   font-weight: 700;
 }
 .secondInfo {
